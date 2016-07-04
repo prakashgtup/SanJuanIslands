@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sandcastle.sanjuanislands.HomeScreenActivity">
+
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons_container"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/header_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logo_height"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+             />
+
+        <TextView
+            android:id="@+id/header_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white_with_half_trans"
+            android:gravity="center|center_vertical"
+            android:maxLines="100"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/description_text_size" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/button_container_margin"
+        android:layout_marginRight="@dimen/button_container_margin"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/explore_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/home_screen_button_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/button_icon_img_size"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/explore" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="@string/explore_btn_txt"
+                    android:textColor="@color/text_color"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/Button_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/points_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/home_screen_button_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/button_icon_img_size"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/points" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="@string/points_btn_txt"
+                    android:textColor="@color/text_color"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/Button_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rewards_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/home_screen_button_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/rewards_button_img"
+                    android:layout_width="@dimen/button_icon_img_size"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/rewards" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="@string/rewards_btn_txt"
+                    android:textColor="@color/text_color"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/Button_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar_bg_color"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/your_acc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/your_acc_btn_txt"
+            android:textSize="@dimen/bottom_bar_text_size"
+            android:textAllCaps="false"
+            android:textColor="@color/bottom_bar_text_color"
+            android:textIsSelectable="false" />
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/about_btn_txt"
+            android:textSize="@dimen/bottom_bar_text_size"
+            android:textAllCaps="false"
+            android:textColor="@color/bottom_bar_text_color"
+            android:textIsSelectable="false" />
+
+        <Button
+            android:id="@+id/tips_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:textSize="@dimen/bottom_bar_text_size"
+            android:text="@string/tips_btn_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/bottom_bar_text_color"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+</RelativeLayout>

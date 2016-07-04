@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/home"
+        android:title="@string/home" />
+    <item android:title="@string/explore">
+        <menu>
+            <item android:id="@+id/explore_map_view"
+                android:icon="@android:drawable/editbox_background"
+                android:title="@string/map_view" />
+            <item android:id="@+id/explore_list_view"
+                android:icon="@android:drawable/ic_menu_camera"
+                android:title="@string/list_view" />
+        </menu>
+    </item>
+    <item android:id="@+id/points"
+        android:title="@string/points" />
+    <item android:title="@string/rewards">
+        <menu>
+            <item android:id="@+id/rewards_map_view"
+                android:icon="@android:drawable/ic_menu_camera"
+                android:title="@string/map_view" />
+            <item android:id="@+id/rewards_list_view"
+                android:icon="@android:drawable/ic_menu_camera"
+                android:title="@string/list_view" />
+        </menu>
+    </item>
+    <item android:id="@+id/your_account"
+        android:title="@string/your_account" />
+    <item android:id="@+id/about"
+        android:title="@string/about" />
+    <item android:id="@+id/tips_support"
+        android:title="@string/tips_support" />-->
+    <!--<group android:checkableBehavior="single">
+        <item android:id="@+id/nav_camara" android:icon="@android:drawable/ic_menu_camera"
+            android:title="Import" />
+        <item android:id="@+id/nav_gallery" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item android:id="@+id/nav_slideshow" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>-->
+
+
+
+</menu>

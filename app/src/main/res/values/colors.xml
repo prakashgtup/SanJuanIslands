@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2D3A5A</color>
+    <color name="colorPrimaryDark">#2D3A5A</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color">#000000</color>
+    <color name="bottom_bar_bg_color">#2D3A5A</color>
+    <color name="bottom_bar_text_color">#FFFFFF</color>
+    <color name="white_with_half_trans">#80FFFFFF</color>
+    <color name="default_bg_color">#FFFFFF</color>
+    <color name="login_edit_text_color">#000000</color>
+    <color name="user_profile_points_txt_color">#4F5E6C</color>
+    <color name="user_profile_points_more_white_half">#A6FFFFFF</color>
+    <color name="parent_dialog_gallery_bg">#AAAAAA</color>
+    <color name="r_text_color">#FF00</color>
+    <color name="explore_detail_collect_point_txt">#828385</color>
+</resources>

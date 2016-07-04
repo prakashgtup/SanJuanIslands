@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_explore_list"
+    tools:context="com.sandcastle.sanjuanislands.ExploreListActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sandcastle.sanjuanislands.ExploreListActivity">
+
+        <ImageView
+            android:id="@+id/bg_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:fitsSystemWindows="true"
+            />
+
+
+        <TextView
+            android:id="@+id/rewards_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:maxLines="100"
+            android:padding="20dp"
+            android:text="@string/rewards_description"
+            android:textColor="@color/text_color"
+            android:visibility="gone"
+            android:background="@color/white_with_half_trans"
+            android:textSize="@dimen/description_text_size" />
+
+        <ListView
+            android:id="@+id/explore_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rewards_description"
+            android:layout_above="@+id/bottom_bar"
+            android:dividerHeight="2dp"
+            android:divider="@color/bottom_bar_bg_color"
+            android:background="@color/white_with_half_trans"
+           />
+
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:background="@color/white_with_half_trans"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:id="@+id/view_explore_map_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_screen_button_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/explore" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@string/view_in_map"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/Button_text_size"
+                        android:textStyle="bold"
+                        android:paddingRight="20dp"
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

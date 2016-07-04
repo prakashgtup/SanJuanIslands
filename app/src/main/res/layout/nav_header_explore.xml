@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/lblListdummy"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/bottom_bar_bg_color"
+        android:gravity="left|center"
+        android:padding="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/lblListHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/home"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/lblListExplore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/explore"
+        android:textColor="#020202"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lblListMapExplore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/map_view"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#C8C7CC" />
+    <TextView
+        android:id="@+id/lblListExploreList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/list_view"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#C8C7CC" />
+
+
+
+
+    <TextView
+        android:id="@+id/lblListPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/points"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/lblListRewards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/rewards"
+        android:textColor="#020202"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblListRewardsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/list_view"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#C8C7CC" />
+
+    <TextView
+        android:id="@+id/lblListMapRewards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/map_view"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#C8C7CC" />
+
+    <TextView
+        android:id="@+id/lblListYourAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/your_account"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#C8C7CC" />
+
+    <TextView
+        android:id="@+id/lblListAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/about"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#C8C7CC" />
+
+    <TextView
+        android:id="@+id/lblListTipsSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:text="@string/tips_support"
+        android:textColor="#020202"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#C8C7CC" />
+
+
+</LinearLayout>
